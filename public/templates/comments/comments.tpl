@@ -96,7 +96,26 @@
 	<small class="nodebb-copyright">Powered by <a href="http://nodebb.org" target="_blank">NodeBB</a> &bull; <a href="{relative_path}/topic/{tid}">View original thread</a></small>
 	<button class="btn btn-primary" <!-- IF !posts.length -->style="display: none"<!-- ENDIF !posts.length --> id="nodebb-load-more">Load more comments...</button>
 <!-- ELSE -->
-	Commenting has been disabled.
+	<div class="pageWrap pageWrap-l" style="position:fixed;top:0px;z-index:999999">
+		<div style="max-width: 1320px; margin: 0px auto;" >
+			<div class="topic-profile-pic-login user user-login">
+				<!-- IF isLoggedIn -->
+				<a href="{relative_path}/user/{user.userslug}"><img src="{user.picture}" class="profile-image" /></a>
+				<!-- ELSE -->
+				<img src="https://1.gravatar.com/avatar/177d180983be7a2c95a4dbe7451abeba?s=95&d=&r=PG" class="login-profile-image" />
+				<!-- ENDIF isLoggedIn -->
+			</div>
+			<div class="user-signin-area">
+				<!-- IF isLoggedIn -->
+				<img src="{user.picture}" class="profile-image" />
+				<!-- ELSE -->
+					<button id="nodebb-register" class="button button--m button--flat bg-blue">Sign in</button>
+				<!-- ENDIF isLoggedIn -->
+			</div>
+		</div>
+	</div>
+	Commenting has been disabled.<br>
+	<a href="https://community.prototypr.io"><button class="button button--m button--flat bg-blue">Enter forum</button></a>
 	<!-- IF isAdmin -->
 	<form action="{relative_path}/comments/publish" method="post">
 		<button class="btn btn-primary">Publish this article to NodeBB</button>
