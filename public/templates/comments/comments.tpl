@@ -1,7 +1,7 @@
 <!-- IF tid -->
 	<!-- IF atTop -->
-	<div  style="position:fixed;top:0px;z-index:999999;left:0;">
-		<div style="max-width: 1320px; margin: 0px auto;" class="pageWrap pageWrap--l" >
+	<div  style="position:fixed;top:0px;z-index:999999;left:0;width:100%;">
+		<div style="max-width: 1320px; margin: 0px auto;position:relative;" class="pageWrap pageWrap--l" >
 			<div class="topic-profile-pic-login user user-login">
 				<!-- IF isLoggedIn -->
 				<a href="{relative_path}/user/{user.userslug}"><img src="{user.picture}" class="profile-image" /></a>
