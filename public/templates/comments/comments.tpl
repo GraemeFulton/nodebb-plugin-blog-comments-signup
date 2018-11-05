@@ -114,9 +114,11 @@
 			</div>
 		</div>
 	</div>
-	Commenting has been disabled.<br>
-	<div class="marginTop-s">
-	<a href="https://community.prototypr.io"><button class="button button--m button--flat bg-blue">Enter forum</button></a>
+	<div class="comments-disabled">
+		Commenting has been disabled.<br>
+		<div class="marginTop-s">
+		<a href="https://community.prototypr.io"><button class="button button--m button--flat bg-blue">Enter forum</button></a>
+	</div>
 	</div>
 	<!-- IF isAdmin -->
 	<form action="{relative_path}/comments/publish" method="post">
