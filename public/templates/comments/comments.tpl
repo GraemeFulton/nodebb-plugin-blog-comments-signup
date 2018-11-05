@@ -109,13 +109,15 @@
 				<!-- IF isLoggedIn -->
 				<img src="{user.picture}" class="profile-image" />
 				<!-- ELSE -->
-					<button id="nodebb-register" class="button button--m button--flat bg-blue">Sign in</button>
+					<a href="https://community.prototypr.io/register"><button id="nodebb-register" class="button button--m button--flat bg-blue">Sign in</button></a>
 				<!-- ENDIF isLoggedIn -->
 			</div>
 		</div>
 	</div>
 	Commenting has been disabled.<br>
+	<div class="marginTop-s">
 	<a href="https://community.prototypr.io"><button class="button button--m button--flat bg-blue">Enter forum</button></a>
+	</div>
 	<!-- IF isAdmin -->
 	<form action="{relative_path}/comments/publish" method="post">
 		<button class="btn btn-primary">Publish this article to NodeBB</button>
