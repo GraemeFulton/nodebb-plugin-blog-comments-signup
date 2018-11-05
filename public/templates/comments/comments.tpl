@@ -13,7 +13,7 @@
 				<!-- IF isLoggedIn -->
 				<img src="{user.picture}" class="profile-image" />
 				<!-- ELSE -->
-					<button id="nodebb-register" class="button button--m button--flat bg-blue">Sign in</button>
+					<a href="https://community.prototypr.io/"><button id="nodebb-register" class="button button--m button--flat bg-blue">Join the community</button></a>
 				<!-- ENDIF isLoggedIn -->
 			</div>
 		</div>
@@ -109,7 +109,7 @@
 				<!-- IF isLoggedIn -->
 				<img src="{user.picture}" class="profile-image" />
 				<!-- ELSE -->
-					<a href="https://community.prototypr.io/register"><button id="nodebb-register" class="button button--m button--flat bg-blue">Sign in</button></a>
+					<a href="https://community.prototypr.io/"><button id="nodebb-register" class="button button--m button--flat bg-blue">Join the community</button></a>
 				<!-- ENDIF isLoggedIn -->
 			</div>
 		</div>
