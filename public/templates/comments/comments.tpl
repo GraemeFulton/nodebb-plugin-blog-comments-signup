@@ -4,7 +4,13 @@
 		<div style="max-width: 1320px; margin: 0px auto;position:relative;" class="pageWrap pageWrap--l" >
 			<div class="topic-profile-pic-login user user-login">
 				<!-- IF isLoggedIn -->
-				<a href="{relative_path}/user/{user.userslug}"><img src="{user.picture}" class="profile-image" /></a>
+				<a href="{relative_path}/user/{user.userslug}">
+							<!-- IF user.picture -->
+							<img src="{user.picture}" alt="{user.username}" class="profile-image" title="{user.username}">
+							<!-- ELSE -->
+							<div class="profile-image" style="background-color: {user.icon:bgColor}" title="{user.username}" alt="{user.username}">{user.icon:text}</div>
+							<!-- ENDIF user.picture -->
+				</a>
 				<!-- ELSE -->
 				<img src="https://1.gravatar.com/avatar/177d180983be7a2c95a4dbe7451abeba?s=95&d=&r=PG" class="login-profile-image" />
 				<!-- ENDIF isLoggedIn -->
@@ -100,7 +106,13 @@
 		<div style="max-width: 1320px; margin: 0px auto;position:relative;" class="pageWrap pageWrap--l" >
 			<div class="topic-profile-pic-login user user-login">
 				<!-- IF isLoggedIn -->
-				<a href="{relative_path}/user/{user.userslug}"><img src="{user.picture}" class="profile-image" /></a>
+				<a href="{relative_path}/user/{user.userslug}">
+							<!-- IF user.picture -->
+							<img src="{user.picture}" alt="{user.username}" class="profile-image" title="{user.username}">
+							<!-- ELSE -->
+							<div class="profile-image" style="background-color: {user.icon:bgColor}" title="{user.username}" alt="{user.username}">{user.icon:text}</div>
+							<!-- ENDIF user.picture -->
+				</a>
 				<!-- ELSE -->
 				<img src="https://1.gravatar.com/avatar/177d180983be7a2c95a4dbe7451abeba?s=95&d=&r=PG" class="login-profile-image" />
 				<!-- ENDIF isLoggedIn -->
